@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// シミケンプロフィールページ（HTMLアクセス用）
+Route::get('/profile.html', function () {
+    return view('pages.profile');
+});
