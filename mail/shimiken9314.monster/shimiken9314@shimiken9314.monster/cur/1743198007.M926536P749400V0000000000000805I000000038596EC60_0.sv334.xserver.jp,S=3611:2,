@@ -1,0 +1,68 @@
+Return-Path: <noreply@github.com>
+Delivered-To: shimiken9314@shimiken9314.monster
+X-Virus-Status: scanned (With Secure/Atlant/virusgw102.xserver.jp/)
+Received: from out-21.smtp.github.com (out-21.smtp.github.com [192.30.252.204])
+	by sv334.xserver.jp (Postfix) with ESMTPS id 2D7CC1A053541E
+	for <shimiken9314@shimiken9314.monster>; Sat, 29 Mar 2025 06:40:07 +0900 (JST)
+Authentication-Results: sv334.xserver.jp;
+	dkim=pass header.d=github.com header.s=pf2023 header.b=Yh7WOaZj;
+	spf=pass (sv334.xserver.jp: domain of noreply@github.com designates 192.30.252.204 as permitted sender) smtp.mailfrom=noreply@github.com;
+	dmarc=pass (policy=reject) header.from=github.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=shimiken9314.monster; s=default; t=1743198007;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=SAYGPf/C+hrTAWMFVvFmfxevzdCpr5fic6zuCF5asPU=;
+	b=i2BP0prnf9f4UKg8cvUL1Ki52DnyiQ7jADeJu8hwnhhjTaMm9XVOoP7oYrihRCYjQUQU1Z
+	P/1CyNi3yOVerjroifRK+EwotVSiJtAnE8d9m5rtctSVfsfFLgaBsUjXte1RbI1OK5g/si
+	rGJa2tPWyamWBRvrmhz5bl8YgHQ63lXOuCKl7OmbVsKiY2UrC3yixFY1QyQChFEqLIninj
+	kOOcxz/xQtWCN95RZ85UtuiOZt4V+8C1WPJL7G4JeunkGJOdGp1Nl0enkZrmaRttrMomrL
+	M8biPcFEsEWfHnDRBxT4Ao5sjhU/7wyn2yFDF/WnPdim3RO120E7rU/i9QLUFA==
+ARC-Seal: i=1; s=default; d=shimiken9314.monster; t=1743198007; a=rsa-sha256;
+	cv=none;
+	b=O7EIVkILeWqZQSC9b9yJa0F9t24nAUBYdYWxB4gZ3tiDCT9jZ3vH4eH+oRLNDPiJgmpOWN
+	fljetkx/bN90dw+/NLWuK3KYeOLeEQeZiW9PNaaZoAgohsUB8YOZdlWBxFtvQm3KakMogD
+	wFlYeEzQv5LKEzk/+N8fsdSDGnvn+4587SBJBoBDwTaS6GIjBEhxE8Inq/Jcei2ExN1jw4
+	c+EgcO9On8LYD2GcKUIoIc85FMjlXABnZEbyZcIDL9EapnuV+2fK43ts1rFFLM0+UlJeqj
+	d7CmsWC/MKtQWw4S/BUnCATqWDw4ZWONxU0VI1nA9NlU8zvqxcSUTp6mHdE6ZQ==
+ARC-Authentication-Results: i=1;
+	sv334.xserver.jp;
+	dkim=pass header.d=github.com header.s=pf2023 header.b=Yh7WOaZj;
+	spf=pass (sv334.xserver.jp: domain of noreply@github.com designates 192.30.252.204 as permitted sender) smtp.mailfrom=noreply@github.com;
+	dmarc=pass (policy=reject) header.from=github.com
+Received: from github.com (hubbernetes-node-2bbc117.ac4-iad.github.net [10.52.132.21])
+	by smtp.github.com (Postfix) with ESMTPA id 9B925700762
+	for <shimiken9314@shimiken9314.monster>; Fri, 28 Mar 2025 14:40:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=github.com;
+	s=pf2023; t=1743198005;
+	bh=SAYGPf/C+hrTAWMFVvFmfxevzdCpr5fic6zuCF5asPU=;
+	h=Date:From:To:Subject:From;
+	b=Yh7WOaZjI2PC8xhUTSyVjSmqos5/59M1Y9eZsTnzOKtbwvJP7TIML3EmCteKx1Ysw
+	 ZS436OksNbOaxEoIoo/0K+neCrJwh+E5cVhqlYIMnAqzQGPegkK+pNm52U3TtFEQgK
+	 E6EsBMpFlFK35iMwZv2CV2Ck/Z2JkfpIUvbxM6Fg=
+Date: Fri, 28 Mar 2025 14:40:05 -0700
+From: GitHub <noreply@github.com>
+To: shimiken9314 <shimiken9314@shimiken9314.monster>
+Message-ID: <67e7173599d3f_b4102898097@lowworker-79d7f568fb-xzbqt.mail>
+Subject: [GitHub] A personal access token (classic) has been added to your
+ account
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: All
+XSRV-Filter: shimiken9314@shimiken9314.monster
+
+Hey shimiken9314!
+
+A personal access token (classic) "Xserver access" with repo scope was recently added to your account. Visit https://github.com/settings/tokens for more information.
+
+To see this and other security events for your account, visit https://github.com/settings/security-log
+
+If you run into problems, please contact support by visiting https://github.com/contact
+
+Thanks,
+The GitHub Team
+
